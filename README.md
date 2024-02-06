@@ -151,7 +151,7 @@ dnf install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 The control-plane node is the machine where the control plane components run, including etcd (the cluster database) and the API Server (which the kubectl command line tool communicates with).
 
 ```bash
-kubeadm init --pod-network-cidr=10.244.0.0/16 --kubernetes-version=v1.26.0 --control-plane-endpoint HOSTNAME:6443
+kubeadm init --pod-network-cidr=10.244.0.0/16 --kubernetes-version=v1.29.1 --control-plane-endpoint HOSTNAME:6443
 ```
 The initialization has completed successfully. If you notice the highlighted output from previous command, there are certain steps which you must perform if you have executed the above command as regular user.
 
